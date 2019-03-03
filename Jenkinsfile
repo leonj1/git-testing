@@ -4,7 +4,7 @@ pipeline {
         stage ('Compile Stage') {
             steps {
 				echo "Compile stage running"
-        		echo 'Pulling...' + env.BRANCH_NAME
+        		echo 'Pulling...' + env.GIT_BRANCH
         		checkout scm
             }
         }
