@@ -1,8 +1,10 @@
 node {
-	stage("Build") {
-		def mavenImage = docker.image("maven:3.6-jdk-8")
-		mavenImage.inside("-e someEnv=dev"){
-			sh 'echo $someEnv'
+	timestamps {
+		stage("Build") {
+			echo "Building"
+		}
+		stage("Deploy") {
+			echo "Deploying"
 		}
 	}
 }
