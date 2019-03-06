@@ -1,10 +1,12 @@
 node {
-	timestamps {
 		stage("Build") {
-			echo "Building"
+			timestamps {
+				echo "Building"
+			}
 		}
 		stage("Deploy") {
-			echo "Deploying"
+			timestamps{
+				echo "Deploying"
+			}
 		}
-	}
 }
