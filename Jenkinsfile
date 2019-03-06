@@ -1,3 +1,6 @@
 node {
-	echo "This is a scripted pipeline"
+	stage("Build") {
+		echo "This is a build stage"
+	}	
 }
+
