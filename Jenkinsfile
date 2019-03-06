@@ -1,3 +1,3 @@
-@Library('leonj-jenkins-shared-libraries') _
-pythonPipeline()
-
+node {
+	echo "This is a scripted pipeline"
+}
