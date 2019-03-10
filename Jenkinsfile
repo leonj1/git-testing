@@ -1,16 +1,7 @@
 #!groovy
 
 pipeline {
-    tools { 
-        maven 'maven 3.3.9' 
-        jdk 'Java 1.8' 
-    }
-    environment {
-        VERSION = '0.0.0'
-    }
-
     agent any 
-
     stages {
         stage('Checkout') { 
             steps {
