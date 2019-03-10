@@ -1,20 +1,23 @@
+#!groovy
+
 pipeline {
-    agent any
+    agent any 
     stages {
-        stage ('Compile Stage') {
+        stage('Checkout') { 
             steps {
-				echo "Compile stage running"
+                echo "Checking out"
             }
         }
-        stage ('Testing Stage') {
+        stage('Build and Test Java code') {
             steps {
-				echo "Testing stage running"
+				echo "Running build and testing Java code"
             }
         }
-        stage ('Deployment Stage') {
+        stage('Build Docker images') {
             steps {
-				echo "Deployment stage running"
+				echo "Building Docker image"
             }
         }
     }
 }
+
