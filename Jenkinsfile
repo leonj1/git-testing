@@ -1,3 +1,5 @@
+#!groovy
+
 node {
     def branchName = ${env.BRANCH_NAME}
     echo 'BRANCH.. ' + branchName
